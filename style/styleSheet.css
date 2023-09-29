@@ -4,6 +4,16 @@ body {
 h1{
     color: red;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2e2c2c;
+}
+li {
+    float: left;
+}
 li a {
     display: block;
     color: white;
@@ -12,5 +22,5 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    background-color: aqua;
+    background-color: rgb(66, 71, 66);
 }
