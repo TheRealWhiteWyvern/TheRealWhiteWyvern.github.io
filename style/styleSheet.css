@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 h1{
     color: red;
@@ -9,18 +9,26 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #2e2c2c;
+    background-color: white;
 }
 li {
     float: left;
 }
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-top-style: solid;
 }
 li a:hover {
-    background-color: rgb(66, 71, 66);
+    text-decoration: red underline;
+    text-underline-offset: 10px;
+}
+.side-column {
+    padding: 20px;
+}
+.main-body {
+    border: 20px
 }
