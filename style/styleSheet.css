@@ -70,8 +70,8 @@ li.dropdown {
 
 /*Content*/
 
-.image1, .image2, .image3{
-    background-image: url(../images/sample_image.jpg); 
+.bgimg1{
+    background-image: url(../images/toyota_mr2_mk3_bgimg1.jpg); 
     height: 100%;
     opacity: 0.65;
     background-attachment: fixed;
@@ -79,7 +79,54 @@ li.dropdown {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.bgimg2 {
+    background-image: url(../images/toyota_mr2_mk3_bgimg2.jpg); 
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg3 {
+    background-image: url(../images/toyota_mr2_mk3_bgimg3.jpg); 
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.caption2 {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption2 span.border2 {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 15px;
+    letter-spacing: 10px;
+}
 .test-box{
     height:1000px;
     background-color: #8789c0;
