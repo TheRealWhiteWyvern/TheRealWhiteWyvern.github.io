@@ -11,6 +11,20 @@ ul {
     overflow: hidden;
     background-color: white;
 }
+.parallax {
+    background-image: url(../images/sample_image.jpg); 
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.test-box{
+    height:1000px;
+    background-color: red;
+    font-size: 36px;
+}
 li {
     float: left;
 }
@@ -28,6 +42,7 @@ li a:hover {
 }
 .side-column {
     padding: 20px;
+    width: 300px;
 }
 .main-body {
     border: 20px
