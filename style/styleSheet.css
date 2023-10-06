@@ -1,33 +1,30 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
+    padding: 0;
     color: white;
 }
 h1{
     color: red;
 }
-.parallax {
-    background-image: url(../images/sample_image.jpg); 
-    min-height: 1000px;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /*Navbar*/
 
+#navbar {
+    z-index: 2;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white
+    background-color: white;
 }
 li {
     float: left;
 }
 li a, .dropbtn {
+    position: relative;
     display: inline-block;
     color: black;
     text-align: center;
@@ -73,6 +70,16 @@ li.dropdown {
 }
 
 /*Content*/
+
+.parallax {
+    background-image: url(../images/sample_image.jpg); 
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .test-box{
     height:1000px;
