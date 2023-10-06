@@ -18,7 +18,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
 }
 li {
     float: left;
@@ -71,7 +70,7 @@ li.dropdown {
 
 /*Content*/
 
-.parallax {
+.image1, .image2, .image3{
     background-image: url(../images/sample_image.jpg); 
     height: 100%;
     opacity: 0.65;
@@ -83,14 +82,10 @@ li.dropdown {
 
 .test-box{
     height:1000px;
-    background-color: red;
+    background-color: #8789c0;
     font-size: 36px;
 }
-.side-column {
-    padding: 20px;
-    width: 300px;
+.main-body, .side-body {
+    border: 20px;
     color: black;
-}
-.main-body {
-    border: 20px
 }
