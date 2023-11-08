@@ -125,7 +125,8 @@ li.dropdown {
 }
 .test-box{
     height:1000px;
-    background-color: #8789c0;
+    background-color: #728091;
+    text-align: center;
     font-size: 36px;
 }
 .main-body, .side-body {
