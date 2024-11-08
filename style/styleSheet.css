@@ -2,7 +2,8 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #ffffff;
+    background-color: #000000;
 }
 h1{
     color: red;
@@ -10,14 +11,22 @@ h1{
 
 /*Navbar*/
 
+#mainNavbar{
+    z-index: 2;
+}
+
 #navbar {
     z-index: 2;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* or 'fixed' to keep it on top when scrolling */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 li {
     float: left;
@@ -25,9 +34,9 @@ li {
 li a, .dropbtn {
     position: relative;
     display: inline-block;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     border-top-style: solid;
 }
@@ -42,7 +51,7 @@ li.dropdown {
     display: none;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(64, 58, 58, 0.2);
     z-index: 1;
 }
 .dropdown-content a {
@@ -64,99 +73,6 @@ li.dropdown {
     padding-top: 60px;
 }
 
-/*SignUp*/
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity:1;
-}
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-.cancelbtn, .signupbtn {
-    float: left;
-    width: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 50px;
-}
-  
-  /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-  
-  /* Style the horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-  
-  /* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-}
-  
-.close:hover,
-.close:focus {
-    color: #f44336;
-    cursor: pointer;
-}
-  
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 /*Content*/
 
 .bgimg1{
