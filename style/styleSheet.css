@@ -1,3 +1,13 @@
+@keyframes slideInBottom {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 body, html {
     height: 100%;
     margin: 0;
@@ -147,6 +157,7 @@ li.dropdown {
 }
 .cutout{
     /*background-image: url("img_nature.jpg"); /* The image used - important! */
+    animation: slideInBottom 2s ease-out;
     background-size: cover;
     position: center; /* Needed to position the cutout text in the middle of the image */
     height: 300px; /* Some height */
@@ -154,11 +165,11 @@ li.dropdown {
 .cutout-text{
     background-color: white;
     color: black;
-    font-size: 8vw; /* Responsive font size */
+    font-size: 6vw; /* Responsive font size */
     font-weight: bold;
     margin: 0 auto; /* Center the text container */
     padding: 10px;
-    width: 50%;
+    width: 40%;
     text-align: center; /* Center text */
     position: absolute; /* Position text */
     top: 50%; /* Position text in the middle */
