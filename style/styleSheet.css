@@ -8,6 +8,23 @@
       opacity: 1;
     }
   }
+  @keyframes randomColors {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: orange;
+    }
+    100% {
+      color: purple;
+    }
+  }
 body, html {
     height: 100%;
     margin: 0;
@@ -153,11 +170,11 @@ li.dropdown {
     color: black;
 }
 .title{
-    padding-top: 500px;
+    padding-top: 450px;
 }
 .cutout{
     /*background-image: url("img_nature.jpg"); /* The image used - important! */
-    animation: slideInBottom 3s ease-out;
+    animation: slideInBottom 2.5s ease-out;
     background-size: cover;
     position: center; /* Needed to position the cutout text in the middle of the image */
     height: 300px; /* Some height */
@@ -177,4 +194,9 @@ li.dropdown {
     mix-blend-mode: screen; /* This makes the cutout text possible */
     font-family: "Orbitron", serif;
     border-radius: 15px;
+    /*transition: color 1s ease-out;*/
 }
+.cutout-text:hover {
+    /*color: #5C6F68;*/
+    animation: randomColors 2s;
+  }

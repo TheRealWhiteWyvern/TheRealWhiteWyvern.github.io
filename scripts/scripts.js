@@ -1,9 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+
+var navbar = document.getElementById("navbar");
+navbar.classList.add("sticky");
+
 window.addEventListener('scroll', stickyNavBar);
 window.onscroll = function() {stickyNavBar()};
 
-var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function stickyNavBar() {
